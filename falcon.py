@@ -1,6 +1,7 @@
 import streamlit as st
 from langchain_community.document_loaders import TextLoader
 from pypdf import PdfReader
+from langchain.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.memory import ConversationBufferWindowMemory
