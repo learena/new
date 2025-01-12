@@ -4,6 +4,7 @@ langchain_huggingface
 faiss-cpu
 peft
 transformers
+accelerate
 sentence-transformers
 InstructorEmbedding
 pypdf
