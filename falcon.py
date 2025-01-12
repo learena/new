@@ -66,9 +66,9 @@ def embedding_storing(split, create_new_vs, existing_vector_store, new_vs_name):
 # Function to prepare Fauno-Italian-LLM-7B for conversational retrieval
 def prepare_rag_llm(token, vector_store_list, temperature, max_length):
     # Load tokenizer and Fauno model
-    tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf")
+    tokenizer = LlamaTokenizer.from_pretrained("baffo32/decapoda-research-llama-7B-hf")
     base_model = LlamaForCausalLM.from_pretrained(
-        "decapoda-research/llama-7b-hf",
+        "baffo32/decapoda-research-llama-7B-hf",
         load_in_8bit=True,
         device_map="auto"
     )
